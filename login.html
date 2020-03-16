@@ -4,6 +4,8 @@
    <head>        
     <meta charset="UTF-8">	
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="login.js"></script>
+    <link rel="stylesheet" type="text/css" href="logincss.css">
     <style type="text/css">
         .top{
     height: auto;
@@ -14,6 +16,7 @@
     top: 0;
     left: 0;
     margin-bottom: 5px;
+    background-size: auto;
     background-image: url(loginbg.png);
 }
 .top ul{
@@ -75,6 +78,11 @@
     padding-top: 0px;
     padding-bottom: 10px;
 }
+.top ul span {
+    float:right; 
+    font-size: 18px;
+    font-weight: 500;
+}
 /* 设置二级菜单 */
 .top ul li ul{
     margin-left: -0.2px;
@@ -103,6 +111,9 @@
     color:rgb(0, 0, 0);
     display: block;
 }
+.loginbutton{
+    padding-left: 100px;
+}
 body{
     background-image: url(loginbg.png);
 }
@@ -120,15 +131,11 @@ body{
                     <li><aaa>|</aaa></li>
                     <li><a href="#">提交作品</a></li>
                     <li><aaa>|</aaa></li>
-                    <li><a href="#">登录 !</a></li>
+                    <span>
+                        <li><a href="#" class="loginbutton">&lt登录&gt</a></li>
 
-                    <!-- <li>
-                        <a href="#">一级菜单</a>
-                        <ul>
-                            <li><a href="#">二级菜单</a></li>
-                            <li><a href="#">二级菜单</a></li>
-                        </ul>
-                    </li>         -->
+                    </span>
+
                     </ul>
                     </center>      
             </div>
@@ -136,8 +143,18 @@ body{
         </body>
     </head>
 <body>
-    <div class="container">
-        芜湖起飞!
-    </div>
+    
+        <div class="box">
+             <p class="input_box">
+                <input id="uname" style="border-radius:5px;" type="text" placeholder="   用户名">
+            </p>
+            <p class="input_box">
+                <input id="upsd" style="border-radius:5px;" type="password" placeholder="   密码">
+            </p>
+        
+            <div id="error_box"><br></div>
+            <div class="button"><button onclick="foLogin()">登录</button></div>
+            <div class="button"><button onclick="javascript:window.open('reg.html');" value="原窗口打开">注册</button></div>
+        </div>
 </body>
 </html>
