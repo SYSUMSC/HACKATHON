@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="cn">
 <html>
-   <head>        
-    <title>登录!-Hackathon</title>    
+   <head>   
+    <title>注册!-Hackathon</title>      
     <meta charset="UTF-8">	
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="login.js"></script>
+    <script src="reg.js"></script>
     <link rel="stylesheet" type="text/css" href="logincss.css">
     <style type="text/css">
         .top{
@@ -145,17 +145,25 @@ body{
     </head>
 <body>
     
-        <div class="box">
-             <p class="input_box">
-                <input id="uname" style="border-radius:5px;" type="text" placeholder="   用户名">
-            </p>
-            <p class="input_box">
-                <input id="upsd" style="border-radius:5px;" type="password" placeholder="   密码">
-            </p>
-        
-            <div id="error_box"><br></div>
-            <div class="button"><button onclick="foLogin()">登录</button></div>
-            <div class="button"><button onclick="javascript:window.location.href='reg.html';" value="原窗口打开">注册</button></div>
-        </div>
+    <div class="box">
+        <p class="input_box">
+            <input id="uname" type="text" placeholder="请输入用户名">
+        </p>
+        <p class="input_box">
+            <input id="upsd" type="password" placeholder="请设置您的密码">
+        </p>
+        <p class="input_box">
+           <input id="upsd1" type="password" placeholder="请再次输入密码">
+        </p>
+         <p class="input_box">
+            <input id="email" type="text" placeholder="请输入您的邮箱">
+        </p>
+    
+        <div id="error_box"><br></div>
+        <div class="button"><button onclick="foLogin()">注册!</button></div>
+        <div class="button"><button onclick="javascript:window.location.href='login.html';" >已有账号，登录！</button></div>
+      
+    
+    </div>
 </body>
 </html>
