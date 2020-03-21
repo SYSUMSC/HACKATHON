@@ -1,0 +1,117 @@
+h2 {
+    font-family:等线;
+    font-size: 28px;
+    text-align: center;
+    margin-top: auto;
+    height: 30px;
+    width: 500px;
+}
+.box {
+    width: auto;
+    font-family:等线;
+    padding-top: 100px;
+    border: 1px solid #ffffffd3;
+    background-color: white;
+    margin:0px auto;  
+    border-radius: 10px; 
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.input_box{
+    height: 30px;
+    width: auto;
+    margin: 0px auto;
+    margin-bottom: 5%;
+    border-radius: 10px; 
+}
+.box input {border-radius:5px;
+    padding-left: 10px;
+    font-family: 等线;
+    align-self: center;
+    height: 30px;
+    width: 300px;
+}
+.teambox{
+    opacity: 50%;
+    background-color:gray;
+    width: auto;
+    font-family:等线;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.teamtop{
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 10px;
+    color:black;
+    font-family: 等线;
+    padding-bottom: 10px;
+}
+.teambox input{
+    color: black;
+    border-style:inset outset;
+    margin-bottom: 10px;
+    border-style:inset;
+    border-width: 3px;
+    border-radius:5px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 等线;
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+}
+.teambox textarea{
+    color: black;
+    border-style:inset outset;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-style:inset;
+    border-width: 3px;
+    border-radius:5px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 等线;
+    font-weight: bold;
+    width: 300px;
+}
+.teambox select{
+    color:black;
+    border-style:inset outset;
+    border-width: 3px;
+    border-radius:5px;
+    margin-left: 20px;
+    padding-left: 6px;
+    font-size: 18px;
+    font-family: 等线;
+    font-weight: bold;
+    height: 38px;
+    width:auto;
+}
+.box button{
+    color:white;
+    height: 50px;   
+    width: auto;
+    font-family: 等线;
+    font-size: 30px;
+    align-self: center;
+    background: #000000c4;
+    border-radius: 5px; 
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+#error_box{
+    font-family: 等线;
+    color:red;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
