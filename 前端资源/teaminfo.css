@@ -115,3 +115,18 @@ h2 {
     font-weight: bold;
     padding-bottom: 10px;
 }
+#submit_button{
+    
+    color:white;
+    height: 50px;   
+    width: auto;
+    font-family: 等线;
+    font-size: 30px;
+    align-self: center;
+    background: #383838;
+    border-radius: 5px; 
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
