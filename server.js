@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const indexRouter = require('./routers/index');
+const teamInfoRouter = require('./routers/teaminfo');
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 //路由设置
 app.use('/', indexRouter);
+app.use('/teaminfo',teamInfoRouter)
 
 //静态资源路径 前端页面图片、css等放置
 app.use(express.static('public'));

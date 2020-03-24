@@ -19,13 +19,16 @@ module.exports = {
     },
 
     //添加用户————db.adduser(数据)
-    addUser(datas){
+    addUser(datas, callback){
         //组装sql语句
-        var sql = "insert into users (userName, mail, password) values ('"+ datas.userName +"','" +datas.mail+ "','" +datas.password + "')";
-        //测试用
-        console.log(sql);
+        var sql = "insert into users (userName, mail, password) values ('"+ datas.userName + "','" + datas.mail+ "','" + datas.password + "')";
+        // console.log(sql);
         connection.query(sql, (err, dataFromSQL)=>{
             if(err)console.log(err);
+            else{
+                // console.log(dataFromSQL);
+                callback(dataFromSQL.affectedRows);
+            }
         });
     },
 
@@ -40,43 +43,19 @@ module.exports = {
         wh = undefined;
     },
 
-    //增加成员————db.where(用户).addMember(添加的内容)
-    //未完成
+    //增加成员
     addMember(datas){
-        //组装sql语句
-        var sql = "insert into members (userName, ) values";
-        //测试用
-        console.log(sql);
-        connection.query(sql, (err, dataFromSQL)=>{
-            if(err)console.log(err);
-        });
-        wh = undefined;
+        
     },
 
-    //删除成员————db.where(用户+该成员).deleteMember()
-    //未完成
+    //删除成员
     deleteMember(){
-        if(wh == undefined){
-            console.log('无where条件');
-            return;
-        }
-        var sql = "delete from members where " + this.wh;
-        console.log(sql);
-        connection.query(sql, (err, dataFromSQL)=>{
-            if(err)console.log(err);
-        });
-        wh = undefined;
+        
     },
 
-    //更新成员————db.where(用户+该成员).updateMember(更新成员的内容)
-    //未完成
+    //更新成员
     updateMember(datas){
-        var sql = "update members set ";
-        console.log(sql);
-        connection.query(sql, (err, dataFromSQL)=>{
 
-        });
-        wh = undefined;
     },
 
 

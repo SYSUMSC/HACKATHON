@@ -126,10 +126,26 @@ body{
                     <ul>
                     <li><aa href="/"><img src="title.png" width=170px></img></aa> </li>
                     <li><a href="/">首页</a></li>
+                    {{if userName}}
+                        <li><a href="./teaminfo">队伍信息</a></li>
+
+                        <li><aaa>|</aaa></li>
+
+                        <li><a href="#">提交作品</a></li>
+                    {{/if}}
                     <li><aaa>|</aaa></li>
-                    <span>
-                        <li><a href="login" class="loginbutton">&lt登录&gt</a></li>
-                    </span>
+
+                    {{if userName}}
+                        <span>
+                            <li><a href="#" class="loginbutton">{{@userName}}</a></li>
+                            <li><a href="/logout">登出</a></li>
+                        </span>
+                    {{else}}
+                        <span>
+                            <li><a href="login" class="loginbutton">&lt登录&gt</a></li>
+                        </span>
+                    {{/if}}
+
 
                     </ul>
                     </center>      
