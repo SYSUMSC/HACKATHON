@@ -45,7 +45,7 @@ module.exports = {
 
     //增加成员
     addMember(datas){
-        
+        var
     },
 
     //删除成员
@@ -57,6 +57,8 @@ module.exports = {
     updateMember(datas){
 
     },
+    //提交作品
+    sunmit(datas){
 
-
+    }，
 }
