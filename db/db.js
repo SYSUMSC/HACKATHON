@@ -42,10 +42,20 @@ module.exports = {
         })
         wh = undefined;
     },
+    //查找队伍  通过用户名寻找（teaminfo里还没写，我觉得进入那个界面渲染时要连着队伍信息一起渲染）
+    selectTeam(callback){
+        var sql = "select * from team where " + this.wh;
+        console.log(sql);
+        connection.query(sql,(err, dataFromSQL)=>{
+            if(err)console.log(err);
+            callback(dataFromSQL);
+        })
+        wh = undefined;
+    },
 
     //增加成员
     addMember(datas){
-        var
+        var sql =
     },
 
     //删除成员
@@ -57,8 +67,8 @@ module.exports = {
     updateMember(datas){
 
     },
-    //提交作品
-    sunmit(datas){
+    //提交作品  也通过用户名寻找
+    submit(datas){
 
     }，
 }
